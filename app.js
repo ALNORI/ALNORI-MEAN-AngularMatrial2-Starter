@@ -1,4 +1,3 @@
-
 var express = require('express');
 var path = require('path');
 var favicon = require('serve-favicon');
@@ -10,7 +9,7 @@ var app = express();
 
 var mongoose = require('mongoose');
 mongoose.Promise = require('bluebird');
-mongoose.connect('mongodb://localhost/mean-angular5', { promiseLibrary: require('bluebird') })
+mongoose.connect('mongodb://localhost/babaAli', { promiseLibrary: require('bluebird') })
   .then(() =>  console.log('connection succesful'))
   .catch((err) => console.error(err));
 
